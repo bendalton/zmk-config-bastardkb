@@ -1,0 +1,25 @@
+
+if SHIELD_BASTARDKB_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "BastardKB Left"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_BASTARDKB_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "BastardKB Right"
+
+endif
+
+if SHIELD_BASTARDKB_LEFT || SHIELD_BASTARDKB_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
+
